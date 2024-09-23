@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+                form {
+                    margin: 0 auto;
+                    width: 400px;
+                 
+                  padding: 1em;
+                  border: 1px solid #ccc;
+                  border-radius: 1em;
+                }
+                div + div {
+                  margin-top: 1em;
+                }
+                label {
+                 
+                  display: inline-block;
+                  width: 90px;
+                  text-align: right;
+                }
+                input {
+                 font: 1em sans-serif;
+                 
+                  width: 300px;
+                  -moz-box-sizing: border-box;
+                  box-sizing: border-box;
+                 
+                  border: 1px solid #999;
+                }
+                input:focus,
+               
+               .button {
+                  /* To position the buttons to the same position of the text fields */
+                  padding-left: 90px; /* same size as the label elements */
+                }
+                button {
+                  /* This extra margin represent the same space as the space between
+                     the labels and their text fields */
+                  margin-left: 0.5em;
+                }
+        </style>   
+        
+    </head>
+    
+    <body>
+        <div> PRACTICA EVIDENCIA GA7-220501096-AA2-EV02</div>
+        <form action="DatosServlet" method="get">
+            <div>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="user_name" />
+            </div>
+            <div>
+                <label for="mail">Correo-E:</label>
+                <input type="email" id="mail" name="user_email" />
+            </div>
+            <div>
+                <label for="user_pass">Password</label>
+                <input type="text" id="user_pass" name="user_pass" />
+            </div>
+                <div class="button">
+                <button type="submit">Enviar Datos</button>
+            </div>
+        </form>
+    </body>
+</html>
